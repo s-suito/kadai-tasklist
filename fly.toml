@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for fragrant-pond-5178 on 2023-07-18T09:16:43Z
+# fly.toml app configuration file generated for fragrant-pond-5178 on 2023-07-31T03:23:43Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -13,20 +13,20 @@ console_command = "php /var/www/html/artisan tinker"
     PHP_VERSION = "8.1"
 
 [env]
+  APP_DEBUG = "false"
   APP_ENV = "production"
+  APP_NAME = "Larabel"
+  APP_URL = "https://fragrant-pond-5178.fly.dev"
+  DB_CONNECTION = "pgsql"
+  DB_DATABASE = "postgres"
+  DB_HOST = "db.lgziwifqtuaghlitgipe.supabase.co"
+  DB_PORT = "5432"
+  DB_USERNAME = "postgres"
   LOG_CHANNEL = "stderr"
   LOG_LEVEL = "info"
   LOG_STDERR_FORMATTER = "Monolog\\Formatter\\JsonFormatter"
   SESSION_DRIVER = "cookie"
   SESSION_SECURE_COOKIE = "true"
-  APP_URL = "https://fragrant-pond-5178.fly.dev"
-  APP_NAME = "Larabel"
-  APP_DEBUG = false
-  DB_CONNECTION = "pgsql"
-  DB_HOST = "db.lgziwifqtuaghlitgipe.supabase.co"
-  DB_PORT = 5432
-  DB_DATABASE = "postgres"
-  DB_USERNAME = "postgres"
 
 [http_service]
   internal_port = 8080

@@ -161,7 +161,7 @@ class TasksController extends Controller
             */
         }
         
-        return redirect("/");
+        //return redirect("/");
 
         /*
         // 前のURLへリダイレクトさせる
